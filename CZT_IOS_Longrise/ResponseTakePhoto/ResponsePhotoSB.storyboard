@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Take Response Photo View Controller-->
+        <scene sceneID="VtF-KK-KNn">
+            <objects>
+                <viewController storyboardIdentifier="TakeResponsePhotoID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3uj-6Z-H0e" customClass="TakeResponsePhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IXy-iK-LFH"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZwW-wF-55T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c3e-yO-5J9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liZ-Fv-oPS">
+                                <rect key="frame" x="16" y="515" width="288" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.65098039220000004" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bsx-WU-sV1"/>
+                                </constraints>
+                                <state key="normal" title="取证完成">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjv-cZ-gBG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="506"/>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZwW-wF-55T" firstAttribute="top" secondItem="liZ-Fv-oPS" secondAttribute="bottom" constant="8" id="19L-r8-LiT"/>
+                            <constraint firstAttribute="trailing" secondItem="liZ-Fv-oPS" secondAttribute="trailing" constant="16" id="5FL-2y-AIK"/>
+                            <constraint firstItem="liZ-Fv-oPS" firstAttribute="top" secondItem="Zjv-cZ-gBG" secondAttribute="bottom" constant="9" id="If4-tP-b4B"/>
+                            <constraint firstItem="liZ-Fv-oPS" firstAttribute="leading" secondItem="c3e-yO-5J9" secondAttribute="leading" constant="16" id="a9u-Gi-rbK"/>
+                            <constraint firstItem="Zjv-cZ-gBG" firstAttribute="leading" secondItem="c3e-yO-5J9" secondAttribute="leading" id="g0M-r1-Exv"/>
+                            <constraint firstItem="Zjv-cZ-gBG" firstAttribute="top" secondItem="c3e-yO-5J9" secondAttribute="top" id="oZ1-DV-77o"/>
+                            <constraint firstAttribute="trailing" secondItem="Zjv-cZ-gBG" secondAttribute="trailing" id="wUG-XZ-kDE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bacScrollView" destination="Zjv-cZ-gBG" id="MJq-Wr-DzW"/>
+                        <outlet property="finishBtn" destination="liZ-Fv-oPS" id="tKk-fR-A8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVQ-xa-SDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="364"/>
+        </scene>
+    </scenes>
+</document>

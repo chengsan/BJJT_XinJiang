@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Warn View Controller2-->
+        <scene sceneID="1kb-79-Vye">
+            <objects>
+                <viewController storyboardIdentifier="WarnViewID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UsM-S0-SMy" customClass="WarnViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dDr-5e-vV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qzv-3v-EP0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hqa-U6-XMz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9M-jT-4eH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="435"/>
+                                <animations/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXD-0L-heB">
+                                <rect key="frame" x="16" y="502" width="288" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.76862745098039209" green="0.83529411764705885" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Zo-uS-cVQ"/>
+                                </constraints>
+                                <state key="normal" title="有以上情况，请拨打122">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbb-Zn-NdL">
+                                <rect key="frame" x="16" y="449" width="288" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.65098039220000004" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rat-4p-DaV"/>
+                                </constraints>
+                                <state key="normal" title="无以上情况">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c9M-jT-4eH" secondAttribute="trailing" id="8KH-ad-AeM"/>
+                            <constraint firstItem="xbb-Zn-NdL" firstAttribute="leading" secondItem="Hqa-U6-XMz" secondAttribute="leading" constant="16" id="8h1-aU-ee6"/>
+                            <constraint firstItem="nXD-0L-heB" firstAttribute="top" secondItem="xbb-Zn-NdL" secondAttribute="bottom" constant="13" id="Qgk-Yg-NZs"/>
+                            <constraint firstItem="c9M-jT-4eH" firstAttribute="leading" secondItem="Hqa-U6-XMz" secondAttribute="leading" id="R6c-ad-TGw"/>
+                            <constraint firstItem="c9M-jT-4eH" firstAttribute="top" secondItem="Hqa-U6-XMz" secondAttribute="top" id="SiU-S6-ghA"/>
+                            <constraint firstAttribute="trailing" secondItem="nXD-0L-heB" secondAttribute="trailing" constant="16" id="Wcq-pi-7VR"/>
+                            <constraint firstItem="xbb-Zn-NdL" firstAttribute="top" secondItem="c9M-jT-4eH" secondAttribute="bottom" constant="14" id="aa4-td-wyx"/>
+                            <constraint firstAttribute="trailing" secondItem="xbb-Zn-NdL" secondAttribute="trailing" constant="16" id="fqT-cG-oHr"/>
+                            <constraint firstItem="Qzv-3v-EP0" firstAttribute="top" secondItem="nXD-0L-heB" secondAttribute="bottom" constant="26" id="kZ7-I7-3oi"/>
+                            <constraint firstItem="nXD-0L-heB" firstAttribute="leading" secondItem="Hqa-U6-XMz" secondAttribute="leading" constant="16" id="rXD-fa-NgZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bacScrollView" destination="c9M-jT-4eH" id="T6q-aG-NFs"/>
+                        <outlet property="okBtn" destination="xbb-Zn-NdL" id="mYR-Eo-3A0"/>
+                        <outlet property="repCaseBtn" destination="nXD-0L-heB" id="fK4-zk-5aJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHN-E5-gTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="140"/>
+        </scene>
+    </scenes>
+</document>
